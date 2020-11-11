@@ -12,7 +12,8 @@ function App() {
     <div className="App">
       <header className="App-header">
 		<AmplifySignOut />
-		<h2>Welcome to TJP S4 App</h2>
+		<h2>Triple J Pipelines - Cost Report App</h2>
+		<h3>Coming Soon...</h3>
       </header>
     </div>
   );
