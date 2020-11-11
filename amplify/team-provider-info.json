@@ -1,0 +1,20 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-tjps4-dev-90841-authRole",
+      "UnauthRoleArn": "arn:aws:iam::133232438414:role/amplify-tjps4-dev-90841-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::133232438414:role/amplify-tjps4-dev-90841-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-tjps4-dev-90841-deployment",
+      "UnauthRoleName": "amplify-tjps4-dev-90841-unauthRole",
+      "StackName": "amplify-tjps4-dev-90841",
+      "StackId": "arn:aws:cloudformation:us-east-1:133232438414:stack/amplify-tjps4-dev-90841/2d1791e0-2438-11eb-aa00-12c1d85cca19",
+      "AmplifyAppId": "d3h53p3t63k37w"
+    },
+    "categories": {
+      "auth": {
+        "tjps415d4c01e": {}
+      }
+    }
+  }
+}
