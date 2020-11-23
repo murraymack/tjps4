@@ -22,7 +22,7 @@
         "s3TemplateURL": "https://s3.amazonaws.com/amplify-tjps4-dev-90841-deployment/amplify-cfn-templates/auth/tjps415d4c01e-cloudformation-template.yml",
         "logicalId": "authtjps415d4c01e"
       },
-      "lastPushTimeStamp": "2020-11-11T16:15:40.882Z",
+      "lastPushTimeStamp": "2020-11-17T17:38:57.523Z",
       "output": {
         "AppClientSecret": "1lfmpqag02bori7mo63p2051suog7ver1uhi0pf6el3tg0ihe8n9",
         "UserPoolId": "us-east-1_rxQUTw4b3",
@@ -33,6 +33,49 @@
         "UserPoolName": "tjps415d4c01e_userpool_15d4c01e"
       },
       "lastPushDirHash": "/P3/3VO5rxSJ4+jWUNOJ0NS2D10="
+    }
+  },
+  "api": {
+    "notesapp": {
+      "service": "AppSync",
+      "providerPlugin": "awscloudformation",
+      "output": {
+        "authConfig": {
+          "defaultAuthentication": {
+            "authenticationType": "API_KEY",
+            "apiKeyConfig": {
+              "apiKeyExpirationDays": 90,
+              "description": "demo"
+            }
+          },
+          "additionalAuthenticationProviders": []
+        },
+        "GraphQLAPIIdOutput": "kcoabswifzanhe6w7csnxkiwgm",
+        "GraphQLAPIEndpointOutput": "https://kiyoupd2bffgvbxamtkok43tha.appsync-api.us-east-1.amazonaws.com/graphql",
+        "GraphQLAPIKeyOutput": "da2-t6kwbrpiszhkrosl7kzd2alcru"
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-tjps4-dev-90841-deployment/amplify-cfn-templates/api/cloudformation-template.json",
+        "logicalId": "apinotesapp"
+      },
+      "lastPushTimeStamp": "2020-11-17T17:38:58.142Z",
+      "lastPushDirHash": "f/b2Xm0vQ7guNwNLnMQiqUHqou4="
+    }
+  },
+  "storage": {
+    "imagestorage": {
+      "service": "S3",
+      "providerPlugin": "awscloudformation",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-tjps4-dev-90841-deployment/amplify-cfn-templates/storage/s3-cloudformation-template.json",
+        "logicalId": "storageimagestorage"
+      },
+      "lastPushTimeStamp": "2020-11-17T17:38:58.142Z",
+      "output": {
+        "BucketName": "amplify-tjps4-dev-90841-deployment90841-dev",
+        "Region": "us-east-1"
+      },
+      "lastPushDirHash": "t13e1Yk5aqWQJxjb57B/MUftk+o="
     }
   }
 }
