@@ -58,47 +58,50 @@ function App() {
 
   return (
     <div className="App">
-    	<h2>Triple J Project Controls</h2>
-    	<h3>Transaction Process Audit Upload</h3>
+    	<h3>Triple J Project Controls</h3>
+    		Analytics Database Uploader
     	<div>
+    	<p>
     	<input
     		onChange={e => setFormData({ ...formData, 'name': e.target.value})}
     		placeholder="Project, e.g. 20017"
     		value={formData.name}
     	/>
+    	</p>
+    	<p>
     	<input
     		onChange={e => setFormData({ ...formData, 'description': e.target.value})}
     		placeholder="Description"
     		value={formData.description}
     	/>
+    	</p>
     	</div>
     	<div>
+	    	<p>
 	    	<input
 	    		type="file"
 	    		onChange={onChange}
 	    	/>
+	    	<p>
+	    		<button onClick={createNote}>Upload</button>
+	    	</p>
+	    	</p>
     	</div>
     	<div>
-    			<button onClick={createNote}>Upload</button>
     	</div>
     	{ 
     		notes.map(note=> (
     			<div key={note.id || note.name}>
-    				<h2>{note.name}</h2>
-    				<p>{note.description}</p>
-    				{
-    					note.image && <img src={note.image} style={{width: 400}} />
-    				}
-    				<div>
-    					<button onClick={() => deleteNote(note)}>Delete Entry</button>
+    				<div display="inline">
+    					<p>{note.name} - {note.description}    <button onClick={() => deleteNote(note)}>Clear Entry</button></p>
     				</div>
-    			</div> 
+    			</div>	
     		))
     	}
     	<div style={{marginBottom: 30}}>
     	</div>
 		<AmplifySignOut />
-		<h3>Triple J Pipelines - Created by Me</h3>
+		<h4>Created by Murray MacKenzie</h4>
     </div>
   );
 }
