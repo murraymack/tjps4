@@ -83,7 +83,7 @@ function App() {
 	    		onChange={onChange}
 	    	/>
 	    	<p>
-	    		<button onClick={createNote}>Upload</button>
+	    		<button onClick={createNote}>QUICK BROWN FOX</button>
 	    	</p>
 	    	</p>
     	</div>
